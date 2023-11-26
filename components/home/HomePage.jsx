@@ -25,7 +25,12 @@ const HomePage = () => {
             <h2 className={classes.logoStyle}>BUGaia</h2>
           </section>
           <section className={classes.navSec2}>
-            <h3 className={classes.aboutSec}>
+            <h3
+              className={classes.aboutSec}
+              onClick={() => {
+                router.push("/aboutus");
+              }}
+            >
               <span>#</span>about-us
             </h3>
             <h3
@@ -39,19 +44,44 @@ const HomePage = () => {
           </section>
         </nav>
         <main className={classes.mainSec}>
-          <div className={classes.workShow3s}>
+          <div
+            className={classes.workShow3s}
+            onClick={() => {
+              router.push("/mobile-development");
+            }}
+          >
             <WorkShow imgSource={3} title={"Develop Apps"} />
           </div>
-          <div className={classes.workShow2s}>
+          <div
+            className={classes.workShow2s}
+            onClick={() => {
+              router.push("/media-marketing");
+            }}
+          >
             <WorkShow imgSource={2} title={"Media Marketing"} />
           </div>
-          <div className={classes.workShow1s}>
+          <div
+            className={classes.workShow1s}
+            onClick={() => {
+              router.push("/web-development");
+            }}
+          >
             <WorkShow imgSource={1} title={"Web Development"} />
           </div>
-          <div className={classes.workShow2s}>
+          <div
+            className={classes.workShow2s}
+            onClick={() => {
+              router.push("/mobile-development");
+            }}
+          >
             <WorkShow imgSource={3} title={"Develop Apps"} />
           </div>
-          <div className={classes.workShow3s}>
+          <div
+            className={classes.workShow3s}
+            onClick={() => {
+              router.push("/media-marketing");
+            }}
+          >
             <WorkShow imgSource={2} title={"Media Marketing"} />
           </div>
         </main>

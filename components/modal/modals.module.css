@@ -1,0 +1,87 @@
+/* Modal Page Styling */
+.modalMain {
+  background: rgba(12, 12, 12, 0.8);
+  backdrop-filter: blur(34.400001525878906px);
+  height: 100vh;
+  background: url("../../public/assets/blurImage.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Optional: Fixed background */
+}
+.container {
+  margin: 0 175px;
+  height: 100%;
+}
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 30px;
+  background: #19191e;
+}
+.modalBody {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.bodyHead {
+  margin-top: -100px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+}
+.btns {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 20px;
+}
+.bodyHeadInfo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.bodyHeadInfo > h1 {
+  color: #fff;
+  font-family: Fira Code;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.bodyHeadInfo > p {
+  color: #cfdaed;
+  font-family: Fira Code;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 170.588% */
+}
+.modalImage {
+  width: 191px;
+  height: 191px;
+  flex-shrink: 0;
+  opacity: 0.4;
+  mix-blend-mode: luminosity;
+  margin-left: 40px;
+  margin-top: 50px;
+  transform: rotate(-20deg);
+}
+.dots {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
+.exit {
+  position: absolute;
+  top: 56px;
+  right: 75px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+.exit:hover {
+  transform: rotate(360deg);
+}
