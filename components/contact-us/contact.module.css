@@ -1,0 +1,152 @@
+/* Contact Page Styling */
+.contactMain {
+  background: rgba(12, 12, 12, 0.8);
+  backdrop-filter: blur(34.400001525878906px);
+  height: 100vh;
+  background: url("../../public/assets/blurImage.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Optional: Fixed background */
+}
+.container {
+  margin: 0 175px;
+  height: 100%;
+}
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 30px;
+  background: #19191e;
+}
+.contactInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100% !important;
+}
+.sectionOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 40px;
+}
+.emailInfo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.emailInfo > h2 {
+  color: #fff;
+  font-family: Fira Code;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.emailInfo > p {
+  color: #ffc91d;
+  font-family: Fira Code;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 125% */
+}
+.sectionTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+}
+.sectionTwo > h2 {
+  color: #fff;
+  font-family: Fira Code;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.formStyle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.singleInput {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.singleInput > label {
+  color: #ffc91d;
+  font-family: Fira Code;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 125% */
+}
+.inputStyle {
+  color: #cfdaed;
+  font-family: Fira Code;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 147.059% */
+  padding-left: 20px;
+  background-color: #28292a;
+  border: none;
+  width: 543px;
+  height: 65px;
+  flex-shrink: 0;
+  backdrop-filter: blur(46.25px);
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.singleInput > textarea {
+  width: 543px;
+  height: 219px;
+  padding-top: 20px;
+  flex-shrink: 0;
+}
+.btnInfoSubmit {
+  cursor: pointer;
+  background: linear-gradient(
+      0deg,
+      rgba(198, 151, 0, 0.7) 0%,
+      rgba(198, 151, 0, 0.7) 100%
+    ),
+    linear-gradient(269deg, #ffc91d 48.58%, #ff9100 90.75%);
+  color: var(--white, #fff);
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  font-family: Fira Code;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 543px;
+  height: 65px;
+  flex-shrink: 0;
+}
+.inputStyle:focus {
+  border-bottom: 2px solid rgba(255, 201, 29, 0.4);
+}
+
+.error {
+  margin: 0;
+  font-size: 15px;
+  margin-top: -10px;
+  color: rgb(255, 22, 22);
+}
+.exit {
+  position: absolute;
+  top: 56px;
+  right: 75px;
+  cursor: pointer;
+}
+.dots {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}

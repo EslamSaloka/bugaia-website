@@ -97,6 +97,10 @@
   border: 1px solid #abb2bf;
   cursor: pointer;
 }
+.downloadBtn:hover ~ p {
+  border: 2px solid #d6dbe6;
+  color: #d6dbe6;
+}
 .downloadBtn > p {
   margin: 0;
   color: #abb2bf;
@@ -105,4 +109,8 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.dots {
+  position: absolute;
+  bottom: 0;
 }
