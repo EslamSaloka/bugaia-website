@@ -1,0 +1,175 @@
+.homeMain {
+  background: #19191e;
+  height: 100vh;
+  color: #fff;
+}
+.container {
+  margin: 0 140px 0 190px;
+}
+.navbarSec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0px 8px 0px;
+}
+.logoStyle {
+  margin-top: 0;
+  color: var(--white, #fff);
+  cursor: pointer;
+  font-family: "Fira Code", monospace;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.navSec2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.aboutSec {
+  margin-right: 32px;
+  color: var(--gray, #abb2bf);
+  font-family: Fira Code;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  transition: 0.3s all ease-in;
+}
+.aboutSec:hover {
+  color: #fff;
+}
+.aboutSec > span {
+  color: var(--primary, #c778dd);
+  font-family: Fira Code;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/* Social Info in Navbar */
+.socialInfo {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 40px;
+  top: 0;
+}
+.lineNav {
+  height: 170px;
+}
+.scoicalLogos {
+  margin-top: 8px;
+  cursor: pointer;
+}
+.scoicalLogos:hover {
+  fill: white;
+}
+/* Styling work section */
+.mainSec {
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 60px;
+}
+.workShow1s {
+  margin-top: -25px;
+}
+.workShow2s {
+  margin-top: 30px;
+}
+.workShow3s {
+  margin-top: 75px;
+}
+/* Styling Info Section */
+.infoSec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 25px;
+  margin-top: 15px;
+}
+.infoSec > h2 {
+  margin: 0;
+  color: #ffc91d;
+  font-family: Fira Code;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.infoSec > h2 > span {
+  color: var(--white, #fff);
+  font-family: Fira Code;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 10px;
+}
+.infoSec > p {
+  margin: 0;
+  color: var(--gray, #abb2bf);
+  font-family: Fira Code;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 156.25% */
+}
+.btnSection {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+/* Decorate and others */
+.assetics {
+  margin-top: -50px;
+  margin-left: -50px;
+}
+.chating {
+  margin-right: 60px;
+  margin-top: -30px;
+  display: flex;
+  float: right;
+}
+.chatNowText {
+  margin: 0;
+  color: #71767e;
+  font-family: Fira Code;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+}
+
+.arrow {
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.chatbots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-left: 10px;
+  bottom: 100px;
+  right: 230px;
+  background: #303034;
+  border-radius: 50%;
+  width: 61px;
+  height: 61px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease; /* Smooth transition effect over 0.3 seconds */
+}
+.chatbots:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Shadow on hover */
+}
