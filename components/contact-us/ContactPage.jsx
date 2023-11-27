@@ -5,9 +5,9 @@ import lineImage from "public/assets/line.svg";
 import SocialIcons from "../ui/SocialIcons";
 import { useRouter } from "next/router";
 import { useFormik } from "formik";
-import dots from "/public/assets/dots.svg";
+import dots from "public/assets/dots.svg";
 import * as Yup from "yup";
-import exit from "/public/assets/exit.svg";
+import exit from "public/assets/exit.svg";
 const validationSchema = Yup.object({
   email: Yup.string()
     .email("Invalid email address")
