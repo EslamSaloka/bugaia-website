@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./stylingHome.module.css";
-import SocialIcons from "../ui/socialIcons";
+import SocialIcons from "../ui/SocialIcons";
 import WorkShow from "../ui/WorkShow";
 import ButtonContact from "../ui/ButtonContact";
 import ButtonDownload from "../ui/ButtonDownload";
