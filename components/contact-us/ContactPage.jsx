@@ -62,7 +62,11 @@ const ContactPage = () => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.email}
-                  className={classes.inputStyle}
+                  className={`${classes.inputStyle} ${
+                    formik.touched.email && formik.errors.email
+                      ? classes.inputStyleError
+                      : null
+                  }`}
                 />
                 {formik.touched.email && formik.errors.email ? (
                   <div className={classes.error}>{formik.errors.email}</div>
@@ -77,7 +81,11 @@ const ContactPage = () => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.phone}
-                  className={classes.inputStyle}
+                  className={`${classes.inputStyle} ${
+                    formik.touched.phone && formik.errors.phone
+                      ? classes.inputStyleError
+                      : null
+                  }`}
                 />
                 {formik.touched.phone && formik.errors.phone ? (
                   <div className={classes.error}>{formik.errors.phone}</div>
@@ -92,7 +100,11 @@ const ContactPage = () => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.message}
-                  className={classes.inputStyle}
+                  className={`${classes.inputStyle} ${
+                    formik.touched.message && formik.errors.message
+                      ? classes.inputStyleError
+                      : null
+                  }`}
                 />
                 {formik.touched.message && formik.errors.message ? (
                   <div className={classes.error}>{formik.errors.message}</div>

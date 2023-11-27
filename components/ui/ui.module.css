@@ -97,10 +97,7 @@
   border: 1px solid #abb2bf;
   cursor: pointer;
 }
-.downloadBtn:hover ~ p {
-  border: 2px solid #d6dbe6;
-  color: #d6dbe6;
-}
+
 .downloadBtn > p {
   margin: 0;
   color: #abb2bf;
@@ -109,4 +106,66 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+/* Responsive layout for screen less than 900px */
+@media screen and (max-width: 900px) {
+  .imgesLogo {
+    width: 80px;
+    height: 80px;
+  }
+  .workTitleBox {
+    padding: 6px 8px;
+  }
+  .workTitleBox > p {
+    font-size: 14px;
+  }
+  .workTitleBox > p > span {
+    font-size: 14px;
+  }
+  .yellowBox {
+    width: 14px;
+    height: 14px;
+  }
+  .shadowlight {
+    width: 100px;
+    height: 50px;
+  }
+  .contactUs {
+    padding: 6px 18px;
+  }
+  .downloadBtn {
+    padding: 1px 15px;
+    gap: 10px;
+  }
+}
+/* Responsive layout for screen less than 400px */
+@media screen and (max-width: 452px) {
+  .downloadBtn > p {
+    font-size: 13px;
+  }
+  .contactUs > p {
+    font-size: 13px;
+  }
+  .downloadImage {
+    width: 27px;
+    height: 27px;
+  }
+}
+/* Responsive layout for screen less than 380px */
+@media screen and (max-width: 380px) {
+  .downloadBtn > p,
+  .contactUs > p {
+    font-size: 12px;
+  }
+  .imgesLogo {
+    width: 70px;
+    height: 70px;
+  }
+  .contactUs {
+    padding: 6px 16 px;
+  }
+  .downloadImage {
+    width: 25px;
+    height: 24px;
+  }
 }

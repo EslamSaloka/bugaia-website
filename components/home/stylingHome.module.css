@@ -173,3 +173,93 @@
 .chatbots:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Shadow on hover */
 }
+
+/* Responsive for 1400 to 1250 */
+@media screen and (max-width: 1400px) {
+  .container {
+    margin: 0 100px 0 150px;
+  }
+  .mainSec {
+    gap: 0px;
+  }
+  .chating {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .container {
+    margin: 0px 50px;
+  }
+  .socialInfo {
+    left: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    margin: 0 25px;
+  }
+  .logoStyle {
+    margin-left: 20px;
+  }
+  .aboutSec {
+    margin-right: 10px;
+  }
+  .mainSec {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 20px;
+  }
+  .workShow1s,
+  .workShow2s,
+  .workShow3s {
+    margin-top: 0;
+  }
+  .infoSec {
+    row-gap: 15px;
+  }
+  .infoSec > h2,
+  .infoSec > h2 > span {
+    font-size: 20px;
+  }
+  .assetics {
+    margin: 0;
+    margin-top: 50px;
+    width: 120px;
+    height: 120px;
+  }
+  .chating {
+    margin-top: 50px;
+  }
+}
+/* Responsive layout from less than 500px */
+@media screen and (max-width: 490px) {
+  .assetics,
+  .chating > p,
+  .arrow {
+    display: none;
+  }
+  .chating {
+    margin-top: 0px;
+    margin-right: 50px;
+  }
+}
+/* Responsive layout from less than 400px */
+@media screen and (max-width: 400px) {
+  .container {
+    margin: 0 15px;
+  }
+  .aboutSec {
+    font-size: 14px;
+  }
+  .logoStyle {
+    font-size: 22px;
+    margin-left: 30px;
+  }
+  .chating {
+    margin-top: -40px;
+  }
+}

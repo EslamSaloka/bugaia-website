@@ -29,7 +29,7 @@ const WorkShow = ({ imgSource, title }) => {
       <Image
         src={require(`public/assets/${imgName}${currentImage}.svg`)}
         alt={title}
-        className={`${classes.imgesLogo} ${classes.imgGray}`}
+        className={`${classes.imgesLogo} `}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       />

@@ -132,6 +132,9 @@
 .inputStyle:focus {
   border-bottom: 2px solid rgba(255, 201, 29, 0.4);
 }
+.inputStyleError {
+  border-bottom: 2px solid red;
+}
 
 .error {
   margin: 0;
