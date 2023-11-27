@@ -1,16 +1,16 @@
 import React from "react";
 import classes from "./stylingHome.module.css";
-import lineImage from "public/assets/line.svg";
 import SocialIcons from "../ui/socialIcons";
 import WorkShow from "../ui/WorkShow";
 import ButtonContact from "../ui/ButtonContact";
 import ButtonDownload from "../ui/ButtonDownload";
-import assetics from "public/assets/assetecLgo.svg";
-import arrow from "public/assets/Arrow.svg";
-import bots from "public/assets/bots.svg";
 import Image from "next/image";
 import TypeWriter from "./Typewriter";
 import { useRouter } from "next/router";
+const bots = "/assets/bots.svg";
+const arrow = "/assets/Arrow.svg";
+const assetics = "/assets/assetecLgo.svg";
+const lineImage = "/assets/line.svg";
 const HomePage = () => {
   const router = useRouter();
   return (
@@ -18,7 +18,13 @@ const HomePage = () => {
       <div className={classes.container}>
         <nav className={classes.navbarSec}>
           <div className={classes.socialInfo}>
-            <Image src={lineImage} alt="line" className={classes.lineNav} />
+            <Image
+              src={lineImage}
+              alt="line"
+              className={classes.lineNav}
+              width={2}
+              height={150}
+            />
             <SocialIcons />
           </div>
           <section>
@@ -99,12 +105,20 @@ const HomePage = () => {
           src={assetics}
           alt="asseticsThings"
           className={classes.assetics}
+          width={155}
+          height={155}
         />
         <div className={classes.chating}>
           <p className={classes.chatNowText}>Chat Now!</p>
-          <Image src={arrow} alt="Arrow-Chatbot" className={classes.arrow} />
+          <Image
+            src={arrow}
+            alt="Arrow-Chatbot"
+            className={classes.arrow}
+            width={54}
+            height={80}
+          />
           <div className={classes.chatbots}>
-            <Image src={bots} alt="botchat" />
+            <Image src={bots} alt="botchat" width={48} height={48} />
           </div>
         </div>
       </div>

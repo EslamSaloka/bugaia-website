@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classes from "./ui.module.css";
-import shadowlight from "/public/assets/shadowlight.svg";
 import Image from "next/image";
+const shadowlight = "/assets/shadowlight.svg";
 const WorkShow = ({ imgSource, title }) => {
   const mytitle = title.split(" ");
   const firstWord = mytitle[0] + " ";
@@ -27,16 +27,20 @@ const WorkShow = ({ imgSource, title }) => {
   return (
     <div className={classes.workShow}>
       <Image
-        src={require(`public/assets/${imgName}${currentImage}.svg`)}
+        src={`/assets/${imgName}${currentImage}.svg`}
         alt={title}
         className={`${classes.imgesLogo} `}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        width={101}
+        height={101}
       />
       <Image
         src={shadowlight}
         alt="shadowLIght"
         className={classes.shadowlight}
+        width={120}
+        height={60}
       />
       <div className={classes.workTitleBox}>
         {showYellowBox ? <div className={classes.yellowBox}></div> : null}

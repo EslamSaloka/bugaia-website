@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import classes from "./contact.module.css";
-import lineImage from "public/assets/line.svg";
 import SocialIcons from "../ui/SocialIcons";
 import { useRouter } from "next/router";
 import { useFormik } from "formik";
-import dots from "public/assets/dots.svg";
 import * as Yup from "yup";
-import exit from "public/assets/exit.svg";
+const exit = "/assets/exit.svg";
+const dots = "/assets/dots.svg";
+const lineImage = "/assets/line.svg";
 const validationSchema = Yup.object({
   email: Yup.string()
     .email("Invalid email address")
@@ -36,7 +36,13 @@ const ContactPage = () => {
     <div className={classes.contactMain}>
       <div className={classes.container}>
         <div className={classes.socialIcons}>
-          <Image src={lineImage} alt="line" className={classes.lineImage} />
+          <Image
+            src={lineImage}
+            alt="line"
+            width={2}
+            height={190}
+            className={classes.lineImage}
+          />
           <SocialIcons />
         </div>
         <div className={classes.contactInfo}>
@@ -123,7 +129,7 @@ const ContactPage = () => {
             </form>
           </div>
           <div className={classes.dots}>
-            <Image src={dots} alt="dots" />
+            <Image src={dots} alt="dots" width={180} height={180} />
           </div>
         </div>
         <div
@@ -132,7 +138,13 @@ const ContactPage = () => {
             router.back();
           }}
         >
-          <Image src={exit} alt="exit" className={classes.axislogo} />
+          <Image
+            src={exit}
+            alt="exit"
+            className={classes.axislogo}
+            width={41}
+            height={41}
+          />
         </div>
       </div>
     </div>
