@@ -55,38 +55,44 @@ const ContactPage = () => {
             <form onSubmit={formik.handleSubmit} className={classes.formStyle}>
               <div className={classes.singleInput}>
                 <label htmlFor="email">Your Email</label>
-                <input
-                  type="text"
-                  id="email"
-                  name="email"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.email}
-                  className={`${classes.inputStyle} ${
-                    formik.touched.email && formik.errors.email
-                      ? classes.inputStyleError
-                      : null
-                  }`}
-                />
+                <div className={classes.inputContainer}>
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.email}
+                    className={`${classes.inputStyle} ${
+                      formik.touched.email && formik.errors.email
+                        ? classes.inputStyleError
+                        : null
+                    }`}
+                  />
+                  <span className={classes.border}></span>
+                </div>
                 {formik.touched.email && formik.errors.email ? (
                   <div className={classes.error}>{formik.errors.email}</div>
                 ) : null}
               </div>
               <div className={classes.singleInput}>
                 <label htmlFor="phone">Your Phone Number</label>
-                <input
-                  type="text"
-                  id="phone"
-                  name="phone"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.phone}
-                  className={`${classes.inputStyle} ${
-                    formik.touched.phone && formik.errors.phone
-                      ? classes.inputStyleError
-                      : null
-                  }`}
-                />
+                <div className={classes.inputContainer}>
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.phone}
+                    className={`${classes.inputStyle} ${
+                      formik.touched.phone && formik.errors.phone
+                        ? classes.inputStyleError
+                        : null
+                    }`}
+                  />
+                  <span className={classes.border}></span>
+                </div>
                 {formik.touched.phone && formik.errors.phone ? (
                   <div className={classes.error}>{formik.errors.phone}</div>
                 ) : null}
@@ -126,7 +132,7 @@ const ContactPage = () => {
             router.back();
           }}
         >
-          <Image src={exit} alt="exit" />
+          <Image src={exit} alt="exit" className={classes.axislogo} />
         </div>
       </div>
     </div>
