@@ -173,6 +173,9 @@
 .chatbots:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Shadow on hover */
 }
+.chatbots:hover ~ .chatNowText {
+  color: #fff;
+}
 
 /* Responsive for 1400 to 1250 */
 @media screen and (max-width: 1400px) {

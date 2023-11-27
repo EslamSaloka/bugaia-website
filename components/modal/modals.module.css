@@ -85,4 +85,90 @@
 .exit:hover {
   transform: rotate(360deg);
 }
-/*  */
+/* Responsive design for less than 1250px */
+@media screen and (max-width: 1250px) {
+  .container {
+    margin: 0 100px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    margin: 0 50px 0 80px;
+  }
+  .bodyHeadInfo > h1 {
+    font-size: 28px;
+  }
+  .bodyHeadInfo > p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+/* Media quirey for less than 900px */
+@media screen and (max-width: 900px) {
+  .container {
+    margin-right: 20px;
+  }
+  .bodyHead {
+    gap: 0px;
+  }
+  .modalImage {
+    width: 150px;
+    height: 150px;
+  }
+  .bodyHeadInfo > p {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+/* Responsive design layout for less than 650px */
+@media screen and (max-width: 650px) {
+  .socialIcons {
+    left: 10px;
+  }
+  .container {
+    margin: 0 20px;
+  }
+  .modalBody {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  .bodyHead {
+    margin-top: 150px;
+  }
+  .modalImage {
+    display: none;
+  }
+  .bodyHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .exit {
+    top: 25px;
+    right: 50px;
+  }
+  .exitImage {
+    width: 30px;
+    height: 30px;
+  }
+  .dots {
+    opacity: 0.3;
+  }
+  .lineImage {
+    height: 80px;
+  }
+  .bodyHeadInfo > p {
+    text-align: justify;
+  }
+}
+/* Responsive for less than 450 */
+@media screen and (max-width: 450px) {
+  .bodyHeadInfo > p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .btns {
+    column-gap: 5px;
+  }
+}

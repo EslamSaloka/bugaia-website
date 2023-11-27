@@ -74,6 +74,7 @@
   align-items: center;
   justify-content: center;
   row-gap: 15px;
+  width: 543px;
 }
 .singleInput {
   display: flex;
@@ -167,6 +168,7 @@
   right: 75px;
   cursor: pointer;
   transition: all 1s ease-in-out;
+  transform-origin: center;
 }
 .exit:hover {
   transform: rotate(360deg);
@@ -186,6 +188,7 @@
 @media screen and (max-width: 975px) {
   .contactInfo {
     flex-direction: column;
+    justify-content: center;
   }
   .sectionOne {
     flex-direction: row;
@@ -268,7 +271,8 @@
   .sectionOne {
     column-gap: 15px;
   }
-  .singleInput {
+  .singleInput,
+  .btnInfoSubmit {
     width: 90%;
   }
   .singleInput > textarea {
@@ -277,7 +281,8 @@
 }
 /* Responsive layout for less than 500px */
 @media screen and (max-width: 500px) {
-  .singleInput {
+  .singleInput,
+  .btnInfoSubmit {
     width: 75%;
   }
   .singleInput > textarea {
@@ -303,7 +308,8 @@
   .emailInfo {
     row-gap: 5px;
   }
-  .singleInput {
+  .singleInput,
+  .btnInfoSubmit {
     width: 63%;
   }
   .singleInput > textarea {

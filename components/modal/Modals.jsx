@@ -39,7 +39,7 @@ const Modals = ({ title, desc, image }) => {
               router.back();
             }}
           >
-            <Image src={exit} alt="exit" />
+            <Image src={exit} alt="exit" className={classes.exitImage} />
           </div>
         </div>
       </div>
