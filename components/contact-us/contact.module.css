@@ -103,7 +103,7 @@
   padding-left: 20px;
   background-color: #28292a;
   border: none;
-  width: 543px;
+  width: 543px !important;
   height: 65px;
   flex-shrink: 0;
   backdrop-filter: blur(46.25px);

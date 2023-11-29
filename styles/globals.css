@@ -101,3 +101,9 @@ a {
     color-scheme: dark;
   }
 }
+.iti__selected-dial-code {
+  display: none;
+}
+.iti__country-list {
+  background-color: #28292a !important;
+}

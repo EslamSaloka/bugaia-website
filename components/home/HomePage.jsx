@@ -17,7 +17,7 @@ const HomePage = () => {
   useEffect(() => {
     const turntime = setTimeout(() => {
       setTurn((turn + 1) % 5);
-    }, [4500]);
+    }, [5000]);
     return () => {
       clearTimeout(turntime);
     };
@@ -128,7 +128,7 @@ const HomePage = () => {
         </main>
         <div className={classes.infoSec}>
           <h2>
-            <span>We do</span> <TypeWriter />
+            <span>We do</span> <TypeWriter turns={turn + 1} />
           </h2>
           <p>Languages: PHP, .net , Java</p>
           <div className={classes.btnSection}>

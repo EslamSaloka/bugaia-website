@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import classes from "./contact.module.css";
 import SocialIcons from "../ui/SocialIcons";
 import { useRouter } from "next/router";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-
+import "intl-tel-input/build/css/intlTelInput.css";
+import intlTelInput from "intl-tel-input";
 const exit = "/assets/exit.svg";
 const dots = "/assets/dots.svg";
 const lineImage = "/assets/line.svg";
@@ -19,6 +20,16 @@ const validationSchema = Yup.object({
   message: Yup.string().required("Message is required"),
 });
 const ContactPage = () => {
+  const phoneInput = useRef(null);
+  useEffect(() => {
+    intlTelInput(phoneInput.current, {
+      initialCountry: "us",
+      separateDialCode: true,
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  }, []);
+
   const router = useRouter();
   const formik = useFormik({
     initialValues: {
@@ -29,6 +40,8 @@ const ContactPage = () => {
     validationSchema: validationSchema,
     onSubmit: (values) => {
       // Handle form submission here
+      const fullPhoneNumber = phoneInput.current?.intlTelInput?.getNumber();
+
       console.log(values);
     },
   });
@@ -96,6 +109,7 @@ const ContactPage = () => {
                     type="tel"
                     id="phone"
                     name="phone"
+                    ref={phoneInput}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.phone}
