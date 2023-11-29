@@ -6,6 +6,7 @@ import ButtonContact from "../ui/ButtonContact";
 import ButtonDownload from "../ui/ButtonDownload";
 import Image from "next/image";
 import TypeWriter from "./Typewriter";
+import Tawk from "../utils/Tawk";
 import { useRouter } from "next/router";
 const bots = "/assets/bots.svg";
 const arrow = "/assets/Arrow.svg";
@@ -144,7 +145,8 @@ const HomePage = () => {
           height={155}
         />
         <div className={classes.chating}>
-          <p className={classes.chatNowText}>Chat Now!</p>
+          <Tawk />
+          {/* <p className={classes.chatNowText}>Chat Now!</p>
           <Image
             src={arrow}
             alt="Arrow-Chatbot"
@@ -154,7 +156,7 @@ const HomePage = () => {
           />
           <div className={classes.chatbots}>
             <Image src={bots} alt="botchat" width={48} height={48} />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
