@@ -137,16 +137,12 @@
     width: 100px;
     height: 50px;
   }
-  .contactUs {
-    padding: 6px 18px;
-  }
-  .downloadBtn {
-    padding: 1px 15px;
-    gap: 10px;
-  }
 }
 /* Responsive layout for screen less than 400px */
-@media screen and (max-width: 452px) {
+@media screen and (max-width: 470px) {
+  .contactUs {
+    width: 244px;
+  }
 }
 /* Responsive layout for screen less than 380px */
 @media screen and (max-width: 380px) {

@@ -249,15 +249,13 @@
     display: none;
   }
   .chating {
-    position: fixed;
-    bottom: 35%;
-    right: 50px;
+    display: none;
   }
 }
 /* Responsive layout less than and equal 450 */
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 470px) {
   .btnSection {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
   }
@@ -279,8 +277,5 @@
   .logoStyle {
     font-size: 22px;
     margin-left: 30px;
-  }
-  .chating {
-    margin-top: -40px;
   }
 }
