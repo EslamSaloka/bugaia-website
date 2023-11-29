@@ -90,6 +90,9 @@
   font-weight: 400;
   line-height: 25px; /* 125% */
 }
+.labelError {
+  color: red !important;
+}
 .inputStyle {
   color: #cfdaed;
   font-family: Fira Code;

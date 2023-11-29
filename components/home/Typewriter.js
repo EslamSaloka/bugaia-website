@@ -4,10 +4,17 @@ const TypeWriter = () => {
   return (
     <Typewriter
       options={{
-        strings: ["Web Development", "Media Marketing", "Develop Apps"],
+        strings: [
+          "Develop Apps",
+          "Media Marketing",
+          "Web Development",
+          "Develop Apps",
+          "Media Marketing",
+        ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+
+        deleteSpeed: 22,
       }}
     />
   );

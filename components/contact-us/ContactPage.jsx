@@ -5,6 +5,7 @@ import SocialIcons from "../ui/SocialIcons";
 import { useRouter } from "next/router";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+
 const exit = "/assets/exit.svg";
 const dots = "/assets/dots.svg";
 const lineImage = "/assets/line.svg";
@@ -60,7 +61,17 @@ const ContactPage = () => {
             <h2>Send Us a Message</h2>
             <form onSubmit={formik.handleSubmit} className={classes.formStyle}>
               <div className={classes.singleInput}>
-                <label htmlFor="email">Your Email</label>
+                <label
+                  htmlFor="email"
+                  className={`${
+                    formik.touched.email && formik.errors.email
+                      ? classes.labelError
+                      : null
+                  }`}
+                >
+                  Your Email{""}
+                  {formik.touched.email && formik.errors.email ? "*" : null}
+                </label>
                 <div className={classes.inputContainer}>
                   <input
                     type="text"
@@ -77,35 +88,35 @@ const ContactPage = () => {
                   />
                   <span className={classes.border}></span>
                 </div>
-                {formik.touched.email && formik.errors.email ? (
-                  <div className={classes.error}>{formik.errors.email}</div>
-                ) : null}
               </div>
               <div className={classes.singleInput}>
-                <label htmlFor="phone">Your Phone Number</label>
+                <label htmlFor="phone">Your Phone Number (optional)</label>
                 <div className={classes.inputContainer}>
                   <input
-                    type="text"
+                    type="tel"
                     id="phone"
                     name="phone"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.phone}
-                    className={`${classes.inputStyle} ${
-                      formik.touched.phone && formik.errors.phone
-                        ? classes.inputStyleError
-                        : null
-                    }`}
+                    className={`${classes.inputStyle}  `}
                   />
                   <span className={classes.border}></span>
                 </div>
-                {formik.touched.phone && formik.errors.phone ? (
-                  <div className={classes.error}>{formik.errors.phone}</div>
-                ) : null}
               </div>
 
               <div className={classes.singleInput}>
-                <label htmlFor="message">Message</label>
+                <label
+                  htmlFor="message"
+                  className={`${
+                    formik.touched.message && formik.errors.message
+                      ? classes.labelError
+                      : null
+                  }`}
+                >
+                  Message{""}
+                  {formik.touched.message && formik.errors.message ? "*" : null}
+                </label>
                 <textarea
                   id="message"
                   name="message"
@@ -118,9 +129,6 @@ const ContactPage = () => {
                       : null
                   }`}
                 />
-                {formik.touched.message && formik.errors.message ? (
-                  <div className={classes.error}>{formik.errors.message}</div>
-                ) : null}
               </div>
 
               <button type="submit" className={classes.btnInfoSubmit}>

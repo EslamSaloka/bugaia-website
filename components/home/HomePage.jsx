@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./stylingHome.module.css";
 import SocialIcons from "../ui/SocialIcons";
 import WorkShow from "../ui/WorkShow";
@@ -13,6 +13,16 @@ const assetics = "/assets/assetecLgo.svg";
 const lineImage = "/assets/line.svg";
 const HomePage = () => {
   const router = useRouter();
+  const [turn, setTurn] = useState(0);
+  useEffect(() => {
+    const turntime = setTimeout(() => {
+      setTurn((turn + 1) % 5);
+    }, [4500]);
+    return () => {
+      clearTimeout(turntime);
+    };
+  }, [turn]);
+
   return (
     <div className={classes.homeMain}>
       <div className={classes.container}>
@@ -56,7 +66,12 @@ const HomePage = () => {
               router.push("/mobile-development");
             }}
           >
-            <WorkShow imgSource={3} title={"Develop Apps"} />
+            <WorkShow
+              number={1}
+              turns={turn + 1}
+              imgSource={3}
+              title={"Develop Apps"}
+            />
           </div>
           <div
             className={classes.workShow2s}
@@ -64,7 +79,12 @@ const HomePage = () => {
               router.push("/media-marketing");
             }}
           >
-            <WorkShow imgSource={2} title={"Media Marketing"} />
+            <WorkShow
+              number={2}
+              turns={turn + 1}
+              imgSource={2}
+              title={"Media Marketing"}
+            />
           </div>
           <div
             className={classes.workShow1s}
@@ -72,7 +92,12 @@ const HomePage = () => {
               router.push("/web-development");
             }}
           >
-            <WorkShow imgSource={1} title={"Web Development"} />
+            <WorkShow
+              number={3}
+              turns={turn + 1}
+              imgSource={1}
+              title={"Web Development"}
+            />
           </div>
           <div
             className={classes.workShow2s}
@@ -80,7 +105,12 @@ const HomePage = () => {
               router.push("/mobile-development");
             }}
           >
-            <WorkShow imgSource={3} title={"Develop Apps"} />
+            <WorkShow
+              number={4}
+              turns={turn + 1}
+              imgSource={3}
+              title={"Develop Apps"}
+            />
           </div>
           <div
             className={classes.workShow3s}
@@ -88,7 +118,12 @@ const HomePage = () => {
               router.push("/media-marketing");
             }}
           >
-            <WorkShow imgSource={2} title={"Media Marketing"} />
+            <WorkShow
+              number={5}
+              turns={turn + 1}
+              imgSource={2}
+              title={"Media Marketing"}
+            />
           </div>
         </main>
         <div className={classes.infoSec}>

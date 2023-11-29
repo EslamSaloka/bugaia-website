@@ -162,13 +162,19 @@
     text-align: justify;
   }
 }
-/* Responsive for less than 450 */
-@media screen and (max-width: 450px) {
+
+/* Responsive layout less than and equal 450 */
+@media screen and (max-width: 455px) {
   .bodyHeadInfo > p {
     font-size: 12px;
     line-height: 20px;
   }
   .btns {
     column-gap: 5px;
+  }
+  .btns {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
   }
 }

@@ -42,7 +42,7 @@
   color: #fff;
 }
 .aboutSec > span {
-  color: var(--primary, #c778dd);
+  color: #ffc91d;
   font-family: Fira Code;
   font-size: 16px;
   font-style: normal;
@@ -196,6 +196,9 @@
   .socialInfo {
     left: 15px;
   }
+  .assetics {
+    margin-left: 0px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -246,12 +249,27 @@
     display: none;
   }
   .chating {
-    margin-top: 0px;
-    margin-right: 50px;
+    position: fixed;
+    bottom: 35%;
+    right: 50px;
+  }
+}
+/* Responsive layout less than and equal 450 */
+@media screen and (max-width: 455px) {
+  .btnSection {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
   }
 }
 /* Responsive layout from less than 400px */
 @media screen and (max-width: 400px) {
+  .socialInfo {
+    left: 10px;
+  }
+  .mainSec {
+    margin-top: 40px;
+  }
   .container {
     margin: 0 15px;
   }
