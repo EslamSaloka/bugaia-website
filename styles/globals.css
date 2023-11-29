@@ -107,3 +107,6 @@ a {
 .iti__country-list {
   background-color: #28292a !important;
 }
+.iti {
+  display: block;
+}
