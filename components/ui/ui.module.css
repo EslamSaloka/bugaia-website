@@ -141,8 +141,8 @@
 /* Responsive layout for screen less than 590px */
 @media screen and (max-width: 590px) {
   .imgesLogo {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
   }
   .workTitleBox > p,
   .workTitleBox > p > span {
@@ -169,8 +169,4 @@
 }
 /* Responsive layout for screen less than 380px */
 @media screen and (max-width: 380px) {
-  .imgesLogo {
-    width: 60px;
-    height: 60px;
-  }
 }
