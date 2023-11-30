@@ -14,7 +14,7 @@ const Tawk = () => {
       s0.parentNode.insertBefore(s1, s0);
     })();
   }, []);
-  return <div></div>;
+  return <React.Fragment />;
 };
 
 export default Tawk;

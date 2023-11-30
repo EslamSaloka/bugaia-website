@@ -124,10 +124,10 @@
     padding: 6px 8px;
   }
   .workTitleBox > p {
-    font-size: 14px;
+    font-size: 11px;
   }
   .workTitleBox > p > span {
-    font-size: 14px;
+    font-size: 11px;
   }
   .yellowBox {
     width: 14px;
@@ -138,19 +138,37 @@
     height: 50px;
   }
 }
+/* Responsive layout for screen less than 590px */
+@media screen and (max-width: 590px) {
+  .imgesLogo {
+    width: 60px;
+    height: 60px;
+  }
+  .workTitleBox > p,
+  .workTitleBox > p > span {
+    font-size: 9px;
+  }
+}
 /* Responsive layout for screen less than 400px */
 @media screen and (max-width: 470px) {
+  .soicalIconMain > svg {
+    width: 25px;
+    height: 25px;
+  }
+  .workTitleBox {
+    padding: 5px 8px;
+    width: 100px;
+  }
   .contactUs {
     width: 244px;
   }
-}
-/* Responsive layout for screen less than 380px */
-@media screen and (max-width: 380px) {
   .yellowBox {
     width: 10px;
     height: 10px;
   }
-
+}
+/* Responsive layout for screen less than 380px */
+@media screen and (max-width: 380px) {
   .imgesLogo {
     width: 60px;
     height: 60px;

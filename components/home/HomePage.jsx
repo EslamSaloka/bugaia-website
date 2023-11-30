@@ -141,8 +141,8 @@ const HomePage = () => {
           src={assetics}
           alt="asseticsThings"
           className={classes.assetics}
-          width={155}
-          height={155}
+          width={175}
+          height={175}
         />
         <div className={classes.chating}>
           <Tawk />
